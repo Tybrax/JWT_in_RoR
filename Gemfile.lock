@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/nsarno/knock.git
+  revision: 9214cd027422df8dc31eb67c60032fbbf8fc100b
+  ref: 9214cd027422df8dc31eb67c60032fbbf8fc100b
+  branch: master
+  specs:
+    knock (2.2.0)
+      bcrypt (~> 3.1)
+      jwt (~> 2.2.1)
+      rails (>= 5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -58,6 +69,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    bcrypt (3.1.15)
     bindex (0.8.1)
     bootsnap (1.4.7)
       msgpack (~> 1.0)
@@ -82,6 +94,7 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
+    jwt (2.2.1)
     loofah (2.6.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -190,10 +203,12 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
   jbuilder (~> 2.7)
+  knock!
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
   sass-rails (>= 6)

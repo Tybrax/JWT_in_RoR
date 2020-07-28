@@ -9,8 +9,8 @@ Bundler.require(*Rails.groups)
 module Weather
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.0
-
+    # ADD THIS LINE IN RAILS 6
+    config.load_defaults 6.0 and config.autoloader = :classic
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
